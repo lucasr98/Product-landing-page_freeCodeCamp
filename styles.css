@@ -1,0 +1,335 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+}
+
+:root{
+	--color_1a: #000;
+	--color_1b: #1a1a1a;
+	--color_2a: #fff;
+	--color_3a: #bf4042;
+
+	font-size: 100%;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+a{
+	text-decoration: none;
+	color: var(--color_2a);
+}
+
+p{
+	line-height: 1.2em;
+}
+
+header{
+	opacity: 0%;
+	background-color: rgba(0, 0, 0, .5);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 4rem;
+	position: fixed;
+	width: 100vw;
+	user-select: none;
+	z-index: 200;
+	transition: opacity, .5s ease-in-out;
+	gap: 8rem;
+}
+
+header:hover{
+	opacity: 100%;
+}
+
+#header-img{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+}
+
+.logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--color_3a);
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 100%;
+	z-index: 1000;
+	transition: transform .5s ease-in-out;
+}
+
+.logo:hover{
+	transform: scale(1.2);
+}
+
+.title{
+	font-size: 1.15rem;
+	color: var(--color_2a);
+	position: relative;
+	margin: auto;
+	text-align: center;
+	line-height: 1.2em;
+}
+
+.title strong{
+	font-size: 1.5rem;
+}
+
+#nav-bar ul{
+	display: flex;
+	align-items: center;
+	list-style: none;
+	gap: 2em;
+}
+
+.nav-link{
+	background-image: linear-gradient(var(--color_3a), var(--color_3a));
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% .1em;
+	transition: background-size, color, .2s;
+	padding-bottom: .25rem;
+}
+
+.nav-link:hover{
+	background-size: 100% .1em;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 1rem;
+	width: 100%;
+	height: 100vh;
+	padding: 4rem;
+}
+
+#home{
+	background-image: url(https://images.pexels.com/photos/6645924/pexels-photo-6645924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+	background-repeat: no-repeat;
+	background-position: center;
+  background-size: cover;
+}
+
+.background{
+	background-color: rgba(0, 0, 0, .4);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+}
+
+.title_h1{
+	z-index: 100;
+}
+
+h1{
+	font-size: 5rem;
+	color: var(--color_2a);
+	z-index: 100;
+	user-select: none;
+}
+
+h2{
+	font-size: 2rem;
+	color: var(--color_3a);
+	z-index: 100;
+	user-select: none;
+}
+
+.underline{
+	width: 100%;
+	height: .25rem;
+	background-color: var(--color_3a);
+}
+
+#home p{
+	color: var(--color_2a);
+	z-index: 100;
+}
+
+#about{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-color: var(--color_1b);
+	color: var(--color_2a);
+}
+
+/*
+.about__img{
+	background-image: url('https://dmn-dallas-news-prod.cdn.arcpublishing.com/resizer/RDb_eTJodY2kpIBpPme_pBrPLq0=/1660x934/smart/filters:no_upscale()/arc-anglerfish-arc2-prod-dmn.s3.amazonaws.com/public/GZJKXWDZBNA27J7IKYLJTTVWK4.JPG');
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	width: 100%;
+}
+*/
+
+.about__vid{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#video{
+	width: 560px;
+	height: 315px;
+}
+
+.about__text{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 1rem;
+}
+
+#contact{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--color_3a);
+}
+
+#contact h2{
+	color: var(--color_2a);
+}
+
+form{
+	background-color: var(--color_1b);
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	min-width: 25%;
+}
+
+.contact__input__item{
+	width: 100%;
+}
+
+.contact__input__item__button{
+	width: 100%;
+	padding: .75rem;
+}
+
+textarea{
+	resize: none;
+	min-height: 10rem;
+}
+
+.contact__input__item-submit{
+	width: 100%;
+	border-style: none;
+}
+
+.contact__input__item__button-submit{
+	width: 100%;
+	padding: .75rem;
+	background-color: var(--color_1a);
+	color: var(--color_2a);
+	cursor: pointer;
+}
+
+.whatsapp{
+	text-decoration: none;
+	bottom: .75rem;
+	right: 2rem;
+	z-index: 1000;
+	user-select: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 255, 255, .15);
+	border-radius: 100%;
+	transition: background-color, transform, .2s ease-in-out;
+	width: 3.5rem;
+	height: 3.5rem;
+	position: fixed;
+	cursor: pointer;
+}
+
+.whatsapp:hover{
+	background-color: #25D366;
+	transform: scale(1.05);
+}
+
+i {
+	color: var(--color_2a);
+	font-size: 2em;
+}
+
+footer{
+	padding: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--color_1b);
+	color: var(--color_2a);
+}
+
+@media only screen and (max-width: 900px){
+	#about{
+		flex-direction: column;
+	}
+}
+
+@media only screen and (max-width: 550px){
+	:root{
+		font-size: .75rem;
+	}
+
+	#home{
+		background-image: url("https://images.unsplash.com/photo-1552611052-33e04de081de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWFlfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+	}
+}
+
+@media only screen and (max-width: 450px){
+	
+	header{
+		display: flex;
+		flex-direction: column;
+		gap: 4rem;
+		opacity: 100%;
+	}
+
+	header:hover > #nav-bar{
+		display: block;
+	}
+
+	.logo_link{
+	}
+
+	h1{
+		font-size: 2rem;
+	}
+
+	#nav-bar{
+		display: none;
+		transition: opacity, .5s ease-in-out;
+	}
+
+	#nav-bar ul{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		list-style: none;
+		gap: 2em;
+	}
+
+	#video{
+		width: 100%;
+	}
+}

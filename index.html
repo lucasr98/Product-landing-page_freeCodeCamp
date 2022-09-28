@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>Building a landing page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,900;1,100;1,400;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bd16a1d5bb.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+      <header id="header">
+        <a class="logo_link" href="index.html">
+        	<img id="header-img" src="https://i.pinimg.com/564x/2c/a9/cb/2ca9cb97e6bcd27566782059ae8df4ab.jpg">
+        	<!--
+        	<span class="logo">
+	          	<div class="title">♥ <strong>RAMEN</strong></div>
+	        </span>
+					-->
+        </a>
+
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About us</a></li>
+            <li><a class="nav-link" href="#contact">Contact us</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+      	<section id="home">
+	        <div class="title_h1">
+	        	<h1>LOVE RAMEN</h1>
+	        	<div class="underline"></div>
+	        </div>
+	        <p>Welcome to our "<strong>LOVE RAMEN</strong>" website, you will be able to know who we are, what we do, and also, you will be able to contact us in the last section.</p>
+	        <p><em>Bon Appetite!</em></p>
+	        <div class="background">
+      		</div>
+      	</section>
+      	<section id="about">
+      		<div class="about__vid">
+      			<iframe id="video" src="https://www.youtube.com/embed/wPGRPhFDdSQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	        </div>
+	        <div class="about__text">
+	        	<h2>About us</h2>
+		        <div class="underline"></div>
+		        <p>
+		        	Our company is in charge of preparing the best ramen dishes in the city. We have a very diverse ramen menu for all diners to enjoy.
+		        </p>
+		        <p>
+		        	You can also try our ramen with ingredients for vegans and celiacs!
+		        </p>
+		        </div>
+      	</section>
+      	<section id="contact">
+	        <h2>Conctact us</h2>
+	        <form class="contact__input" id="form" action="https://www.freecodecamp.com/email-submit">
+						<div class="contact__input__item">
+							<input type="text" name="name" class="contact__input__item__button" id="name" placeholder="Name" maxlength="50">
+						</div>
+						<div class="contact__input__item">
+							<input type="email" name="email" name="email" class="contact__input__item__button" id="email" placeholder="E-mail" maxlength="50">
+						</div>
+						<div class="contact__input__item">
+							<textarea name="message" class="contact__input__item__button" id="message" placeholder="Message" maxlength="1000"></textarea>
+						</div>
+						<button class="contact__input__item-submit">
+							<input type="submit" id="submit" value="Send" class="contact__input__item__button-submit">
+						</button>
+					</form>
+      	</section>
+      	<span class="whatsapp">
+					<i class="fa-brands fa-whatsapp"></i>
+				</span>
+      </main>
+      <footer>
+      	<span>©2022 - Love RAMEN</span>
+      </footer>
+  </body>
+</html>
